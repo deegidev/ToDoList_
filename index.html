@@ -4,23 +4,23 @@
 <head>
   <meta charset="utf-8">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head> <!--End Head-->
-<body>
-    <h1> To-Do List </h1>
+<body> <!--Start Body-->
+ 
+    <h1 id="h1"> TO-DO LIST </h1>
+    
     <div id="fullList"></div>
 
-    <form >
-        <input type="text" id="txtbx" onfocus='this.value=""' >
-        <input type="button" value="x" onClick="addToList();">
+    <form id="form1">
+        <input type="text" id="item" onfocus='this.value=""' > 
+        <input type="button" id="thebutton" value="+" onClick="addToList();">
     </form> <!--End form to add()-->
  
-  
-  
-  
-  
-  
+    <div class="toDoList" id="toDoList"></div>
+    
   <script src="app.js"></script>
+  <p id="footer"> *Click an item to cross it out as done. Double click an item to delete it. </p>
 </body><!--End Body-->
 </html> <!--End html-->
